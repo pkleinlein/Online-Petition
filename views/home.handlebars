@@ -1,0 +1,14 @@
+<div class = "container">
+    <div class="innerContainer">
+        {{#if error}}
+        <div class="error">Error!</div>
+        {{/if}}
+    <form method="POST">
+        <div id="canvasContainer">
+            <canvas id="sigCanvas" width="450px" height="100px" name="signuture" required></canvas>
+        </div>
+        <input type="hidden" id="hiddenInput" name="sig">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <button type="submit" id="submitbutton">Sign now!</button>
+    </form>
+</div>

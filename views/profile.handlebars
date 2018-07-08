@@ -1,0 +1,12 @@
+<div class ="container">
+    <div class="innerContainer">
+        <h2 class="medium">Let us know more about yourself and <br> add some information to your profile. </h2>
+        <form method="POST">
+            <input type="text" name="cityPro" id="proCity" placeholder="City">
+            <input type="text" name="agePro" id="proAge" placeholder="Age">
+            <input type="text" name="petPro" id="proPet" placeholder="Favorite pet">
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            <button type="submit" id="buttonLog">Update</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="innerContainer">
+        <h2 class="medium">Let us know even more.</h2>
+        <form method="post">
+            <input type="text" name="first" placeholder="First Name" value="{{signer.first}}">
+            <input type="text" name="sur" placeholder="Last Name" value="{{signer.sur}}">
+            <input type="email" name="email" placeholder="Email Address" value="{{signer.email}}">
+            <input type="number" name="age" placeholder="Age" value="{{signer.age}}">
+            <input type="text" name="city" placeholder="City" value="{{signer.city}}">
+            <input type="text" name="pet" placeholder="Pet" value="{{signer.pet}}">
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            <input type="password" name="password" placeholder="Password">
+            <button id="submit" type="submit" name="update">Update Profile</button>
+            <!-- <button id="clear" type="button" name="clear">Clear</button> -->
+        </form>
+    </div>
+</div>
